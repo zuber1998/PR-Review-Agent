@@ -1,0 +1,23 @@
+public class Calculator {
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    public int divide(int a, int b) {
+        return a / b; // No check for division by zero
+    }
+
+    public static void main(String[] args) {
+       // Calculator calc = new Calculator();
+        int result = calc.add(5, 10);
+        System.out.println("Sum: " + result);
+
+        int div = calc.divide(10, 0); // Will cause exception
+        System.out.println("Division: " + div);
+
+        // Unused variable
+        int unused = 100;
+
+        // Bad practice: hardcoded values, no input validation, no exception handling
+    }
+}
